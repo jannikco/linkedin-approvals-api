@@ -5,7 +5,7 @@
   "releaseEligible": true,
   "maintainer": "jannikco",
   "license": "MIT",
-  "sourceRevision": "ea33908e4d5e10508739f28e11abf708e11f3117f1108b904229eeeb00079e55",
+  "sourceRevision": "36b4cf3c3f36201256eb9c2d4e57c364a976cca7509430c60af0cb4448dd231a",
   "evidence": [
     "Pinned public OpenAPI contract",
     "tests/leadadapter.test.mjs"
@@ -21,5 +21,39 @@
   "operationIds": [
     "list_approvals_get"
   ],
-  "attributionSlug": "github-linkedin-approvals-api"
+  "attributionSlug": "github-linkedin-approvals-api",
+  "artifactType": "workflow",
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "list_approvals_get",
+          "level": "Tested",
+          "evidenceRefs": [
+            "SDK/agent/workflow contract fixtures; no live provider execution"
+          ],
+          "method": "contract-fixture"
+        }
+      ],
+      "evidenceRefs": [
+        "SDK/agent/workflow contract fixtures; no live provider execution"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
+  },
+  "qualityVersion": 2,
+  "utility": {
+    "problem": "Inspect pending governed actions without approving or executing them.",
+    "output": "Authenticated LeadAdapter results, review reports and resumable research-to-CRM workflows"
+  },
+  "agentReady": true,
+  "version": "0.2.0",
+  "executionAuthority": "leadadapter-api"
 }
