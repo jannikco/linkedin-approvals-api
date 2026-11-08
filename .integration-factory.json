@@ -5,7 +5,7 @@
   "releaseEligible": true,
   "maintainer": "jannikco",
   "license": "MIT",
-  "sourceRevision": "36b4cf3c3f36201256eb9c2d4e57c364a976cca7509430c60af0cb4448dd231a",
+  "sourceRevision": "f4be1c11bbd8a9cbafd54ba545dfa5b36ffe0314e4d7fa5d39db380b19c14a07",
   "evidence": [
     "Pinned public OpenAPI contract",
     "tests/leadadapter.test.mjs"
